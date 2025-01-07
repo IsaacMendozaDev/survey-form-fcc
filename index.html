@@ -3,226 +3,261 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form freeCodeCamp</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form FCC</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <img
-          src="./img/fcc_primary_small.svg"
-          alt="Logo freeCodeCamp"
-          class="header-logo"
+    <header class="header">
+      <svg
+        class="header__logo"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 712 484"
+      >
+        <defs>
+          <path
+            id="a1UGBK5Jf"
+            d="M136.83 9.96C139.18 12.3 141.53 15.67 141.54 19.06C141.55 24.92 134.67 32.87 121.95 45.93C68.91 97 42.23 159.54 42.41 234.97C42.61 318.42 70.67 385.44 125.21 437.38C136.68 447.63 141.39 455.69 141.41 462.59C141.41 465.97 139.08 469.49 136.74 472.88C134.54 475.23 129.85 477.59 126.47 477.59C113.85 477.62 96.19 462.7 73.13 433.67C28.23 378.64 7.93 317.87 6.79 235.05C5.74 152.19 31.72 96 82.57 37.99C100.87 17.26 116.13 6.49 126.54 6.47C129.92 6.46 133.44 7.62 136.83 9.96Z"
+          />
+          <path
+            id="a8LR3SBcZL"
+            d="M415.42 249.9C395.49 244.81 477.27 148.19 331.92 32.51C331.92 32.51 350.99 93.1 254.83 228.31C158.62 363.47 297.61 443.99 297.61 443.99C297.61 443.99 232.38 409.23 308.21 285.47C321.78 263.02 339.54 242.69 361.59 196.93C361.59 196.93 381.11 224.48 370.92 284.21C355.68 374.47 437.01 348.64 438.27 349.9C466.68 383.35 414.74 442.14 411.58 443.99C408.43 445.79 559.91 352.87 452.29 213.03C444.92 220.4 435.34 255 415.42 249.9Z"
+          />
+          <path
+            id="eYLbcOweH"
+            d="M575.26 9.9C572.91 12.24 570.56 15.61 570.55 19C570.54 24.86 577.42 32.81 590.14 45.87C643.18 96.93 669.86 159.48 669.68 234.91C669.48 318.36 641.42 385.38 586.88 437.32C575.41 447.57 570.7 455.63 570.68 462.53C570.68 465.91 573.01 469.43 575.35 472.82C577.55 475.17 582.24 477.52 585.62 477.53C598.24 477.56 615.9 462.64 638.96 433.61C683.86 378.58 704.16 317.81 705.3 234.99C706.35 152.13 680.37 95.94 629.52 37.93C611.22 17.2 595.96 6.43 585.55 6.41C582.17 6.4 578.65 7.56 575.26 9.9Z"
+          />
+        </defs>
+        <g>
+          <g>
+            <g>
+              <use
+                fill="#fff"
+                fill-opacity="1"
+                opacity="1"
+                xlink:href="#a1UGBK5Jf"
+              />
+              <g>
+                <use
+                  fill-opacity="0"
+                  stroke="#fff"
+                  stroke-opacity="0"
+                  stroke-width="1"
+                  opacity="1"
+                  xlink:href="#a1UGBK5Jf"
+                />
+              </g>
+            </g>
+            <g>
+              <use
+                fill="#fff"
+                fill-opacity="1"
+                opacity="1"
+                xlink:href="#a8LR3SBcZL"
+              />
+              <g>
+                <use
+                  fill-opacity="0"
+                  stroke="#fff"
+                  stroke-opacity="0"
+                  stroke-width="1"
+                  opacity="1"
+                  xlink:href="#a8LR3SBcZL"
+                />
+              </g>
+            </g>
+            <g>
+              <use
+                fill="#fff"
+                fill-opacity="1"
+                opacity="1"
+                xlink:href="#eYLbcOweH"
+              />
+              <g>
+                <use
+                  fill-opacity="0"
+                  stroke="#fff"
+                  stroke-opacity="0"
+                  stroke-width="1"
+                  opacity="1"
+                  xlink:href="#eYLbcOweH"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+
+      <p class="header__description">
+        Code by
+        <a href="https://github.com/IsaacMendozaDev" rel="noreferrer"
+          >IsaacMendozaDev</a
+        >
+        ❤️
+      </p>
+
+      <a
+        class="header__link"
+        href="https://github.com/IsaacMendozaDev/survey-form-fcc"
+        rel="noreferrer"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 20 20"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          fill="#ffffff"
+          stroke="#ffffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>github [#fff142]</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="Dribbble-Light-Preview"
+                transform="translate(-140.000000, -7559.000000)"
+                fill="#ffffff"
+              >
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path
+                    d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                    id="github-[#fff142]"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </header>
+
+    <main class="main">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Let us know some info to improve our platform 😉</p>
+
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
         />
-        <h1 class="header-title" id="title">
-          <span class="header-title-fcc">freeCodeCamp</span
-          ><span class="header-title-form">Survey Form</span>
-        </h1>
-      </header>
-      <main class="main">
-        <section class="important">
-          <h3 class="important-title">Important!</h3>
-          <p class="important-description" id="description">
-            This is a project to aprove the Responsive Web Design certification
-            of freeCodeCamp. The form is not funcional, is only design.
-          </p>
-        </section>
-        <form class="form" id="survey-form">
-          <p class="form-group">
-            <label class="form-label" for="name" id="name-label">Name</label>
-            <input class="form-input" type="text" name="name" id="name"
-            placeholder="Enter your name" required/ >
-          </p>
-          <p class="form-group">
-            <label class="form-label" for="email" id="email-label">Email</label>
-            <input
-              class="form-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </p>
-          <p class="form-group">
-            <label class="form-label" for="number" id="number-label"
-              >Age <span class="subparagraph">(optional)</span></label
-            >
-            <input
-              class="form-input"
-              type="number"
-              name="age"
-              id="number"
-              placeholder="Age"
-              min="0"
-              max="100"
-            />
-          </p>
-          <p class="form-group">
-            <label class="form-label" for="dropdown"
-              >Which option best describes your current role?</label
-            >
-            <select name="user-role" id="dropdown" class="form-input" required>
-              <option value="none" disabled selected>
-                Select current role
-              </option>
-              <option value="student">Student</option>
-              <option value="job">Full Time Job</option>
-              <option value="learner">Full Time Learner</option>
-              <option value="prefer-no">Prefer not to say</option>
-              <option value="other">Other</option>
-            </select>
-          </p>
-          <p class="form-group">
-            <label class="form-label">
-              Would you recommend freeCodeCamp to a friend?
-            </label>
-            <label for="definitely" class="form-input">
-              <input
-                name="user-recommend"
-                type="radio"
-                id="definitely"
-                value="definitely"
-              />
-              <span> Definitely </span>
-            </label>
-            <label for="maybe" class="form-input">
-              <input
-                name="user-recommend"
-                type="radio"
-                id="maybe"
-                value="maybe"
-              />
-              <span> Maybe </span>
-            </label>
-            <label for="not-sure" class="form-input">
-              <input
-                name="user-recommend"
-                type="radio"
-                id="not-sure"
-                value="not-sure"
-              />
-              <span> Not sure </span>
-            </label>
-          </p>
-          <p class="form-group">
-            <label for="most-like" class="form-label"
-              >What is your favorite feature of freeCodeCamp?</label
-            >
-            <select name="most-like" id="most-like" class="form-input" required>
-              <option value="none" disabled selected>Select an option</option>
-              <option value="challenges">Challenges</option>
-              <option value="projects">Projects</option>
-              <option value="community">Community</option>
-              <option value="open-source">Open Source</option>
-            </select>
-          </p>
-          <p class="form-group">
-            <label class="form-label">
-              What would you like to see improved?
-              <span class="subparagraph">(Check all that apply)</span>
-            </label>
-            <label for="front-end-projects" class="form-input"
-              ><input
-                id="front-end-projects"
-                type="checkbox"
-                name="prefer"
-                value="front-end-projects"
-              />
-              <span> Front-end Projects </span> </label
-            ><label for="back-end-projects" class="form-input"
-              ><input
-                id="back-end-projects"
-                type="checkbox"
-                name="prefer"
-                value="back-end-projects"
-              />
-              <span> Back-end Projects </span> </label
-            ><label for="data-visualization" class="form-input"
-              ><input
-                id="data-visualization"
-                type="checkbox"
-                name="prefer"
-                value="data-visualization"
-              />
-              <span> Data visualization </span> </label
-            ><label for="challenges" class="form-input"
-              ><input
-                id="challenges"
-                type="checkbox"
-                name="prefer"
-                value="challenges"
-              />
-              <span> Challenges </span> </label
-            ><label for="open-source-community" class="form-input"
-              ><input
-                id="open-source-community"
-                type="checkbox"
-                name="prefer"
-                value="open-source-community"
-              />
-              <span> Open Source Community </span> </label
-            ><label for="gitter-help-rooms" class="form-input"
-              ><input
-                id="gitter-help-rooms"
-                type="checkbox"
-                name="prefer"
-                value="gitter-help-rooms"
-              />
-              <span> Gitter help rooms </span> </label
-            ><label for="videos" class="form-input"
-              ><input
-                id="videos"
-                type="checkbox"
-                name="prefer"
-                value="videos"
-              />
-              <span> Videos </span> </label
-            ><label for="city-meetups" class="form-input"
-              ><input
-                id="city-meetups"
-                type="checkbox"
-                name="prefer"
-                value="city-meetups"
-              />
-              <span> City Meetups </span> </label
-            ><label for="wiki" class="form-input"
-              ><input id="wiki" type="checkbox" name="prefer" value="wiki" />
-              <span> Wiki </span> </label
-            ><label for="forum" class="form-input"
-              ><input id="forum" type="checkbox" name="prefer" value="forum" />
-              <span> Forum </span> </label
-            ><label for="additional-courses" class="form-input"
-              ><input
-                id="additional-courses"
-                type="checkbox"
-                name="prefer"
-                value="additional-courses"
-              />
-              <span> Additional Courses </span>
-            </label>
-          </p>
-          <p class="form-group">
-            <label for="comments" class="form-label">
-              Any comments or suggestions?
-            </label>
-            <textarea
-              name="comments"
-              id="comments"
-              class="form-input"
-              rows="4"
-              placeholder="Enter your comment here..."
-            ></textarea>
-          </p>
-          <p class="form-group">
-            <button type="submit" id="submit">Submit</button>
-          </p>
-        </form>
-      </main>
-    </div>
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="1"
+          max="100"
+          placeholder="Age"
+          required
+        />
+        <label for="dropdown" id="dropdown-label"
+          >Which option best describes you?</label
+        >
+        <select id="dropdown" name="role" required>
+          <option disabled selected value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <fieldset>
+          <legend>What would you like to see improved?</legend>
+          <input
+            type="checkbox"
+            id="feature1"
+            name="feature"
+            value="front-end"
+          />
+          <label for="feature1">Front-end</label>
+          <input
+            type="checkbox"
+            id="feature2"
+            name="feature"
+            value="back-end"
+          />
+          <label for="feature2">Back-end</label>
+          <input type="checkbox" id="feature3" name="feature" value="design" />
+          <label for="feature3">Design</label>
+          <input type="checkbox" id="feature4" name="feature" value="content" />
+          <label for="feature4">Content</label>
+          <input type="checkbox" id="feature5" name="feature" value="forum" />
+          <label for="feature5">Forum</label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend this site to a friend?</legend>
+          <input
+            type="radio"
+            id="definitely"
+            name="recommend"
+            value="definitely"
+          />
+          <label for="definitely">Definitely</label>
+          <input type="radio" id="maybe" name="recommend" value="maybe" />
+          <label for="maybe">Maybe</label>
+          <input type="radio" id="not-sure" name="recommend" value="not-sure" />
+          <label for="not-sure">Not sure</label>
+        </fieldset>
+        <label for="comments" id="comments-label"
+          >Any comment or suggestions? (Maybe this would be our next
+          feature)</label
+        >
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Enter your comments here"
+        ></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      *This is a project for the freeCodeCamp Responsive Web Design course.
+      <a
+        href="https://www.freecodecamp.org/certification/IsaacMendozaDev/responsive-web-design"
+        rel="noopener noreferrer"
+        >See more</a
+      >*
+    </footer>
   </body>
 </html>
